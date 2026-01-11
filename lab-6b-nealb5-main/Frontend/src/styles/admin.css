@@ -1,0 +1,138 @@
+.admin-page {
+    padding: 2em;
+    background-color: #2f2f2f;
+    /* Dark background */
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    color: #f9f9f9;
+    /* Light text */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #404040;
+    /* Darker table background */
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 1em;
+    border: 1px solid #666;
+    /* Darker border */
+    text-align: left;
+    color: #f9f9f9;
+    /* Light text */
+}
+
+h1,
+h2 {
+    color: #ddd;
+    /* Light text */
+}
+
+h1 {
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+h2 {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+
+form {
+    margin-bottom: 2em;
+    background-color: #404040;
+    /* Darker form background */
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+    color: #ddd;
+    /* Light text */
+}
+
+input,
+select {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border-radius: 3px;
+    border: 1px solid #666;
+    /* Darker border */
+    background-color: #282828;
+    /* Dark input/select background */
+    color: #f9f9f9;
+    /* Light text */
+}
+
+button[type="submit"] {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #555555;
+    /* Darker button color */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button[type="submit"]:hover {
+    background-color: #008cba;
+    /* Bright color for contrast */
+    color: white;
+}
+
+button {
+    background-color: #f44336;
+    /* Red color */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #555555;
+    /* Dark Gray color */
+    color: white;
+}
+
+.delete-user-icon {
+    color: #f44336;
+    /* Red color for delete */
+    cursor: pointer;
+}
+
+#users-table .action-column {
+    width: 40px;
+    text-align: center;
+    vertical-align: middle;
+    color: #f9f9f9;
+    /* Light text */
+}
+
+.delete-user-icon {
+    color: #f44336;
+    /* Red color for delete */
+    cursor: pointer;
+}

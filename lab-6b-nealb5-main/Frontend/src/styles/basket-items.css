@@ -1,0 +1,135 @@
+.basket-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    background-color: #121212;
+    color: #eee;
+    padding: 1rem;
+}
+
+.basket-title {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.basket-item-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    color: #fff;
+    width: auto;
+    max-width: 900px;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
+
+.basket-items-container {
+    width: 100%;   /* Set the width as per your requirement */
+    max-width: 900px;  /* Set the max-width as per your requirement */
+    margin: 0 auto; /* This is to center the container */
+}
+
+
+.product-image {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.basket-item-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 0.2fr auto; 
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+
+
+
+.product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.product-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    border: none;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.quantity-btn:hover {
+    background-color: #f60;
+}
+
+.product-quantity {
+    color: #eee;
+}
+
+.product-price {
+    color: #f60;
+    margin-bottom: 0.5rem;
+}
+
+.remove-btn {
+    background-color: transparent;
+    border: none;
+    color: #f60;
+    font-size: 1.2em;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.remove-btn:hover {
+    color: #eee;
+}
+
+.total-price {
+    color: #f60;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 80%;
+    max-width: 900px;
+    margin-bottom: 1rem;
+}
+
+.checkout-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 80%;
+    max-width: 900px;
+    transition: background-color 0.2s ease;
+}
+
+.checkout-button:hover {
+    background-color: #f60;
+}
+
+.empty-message {
+    color: #f60;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    max-width: 900px;
+}

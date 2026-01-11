@@ -1,0 +1,46 @@
+.main {
+  margin: 30px 20%;
+}
+
+.content {
+  background-color: #333333;
+  padding: 20px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: row;
+}
+
+.summary > * {
+  margin: 0 10px;
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
+.profile-pic {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.file-select {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.status-message {
+  margin: 10px;
+  height: 30px;
+}

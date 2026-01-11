@@ -1,0 +1,59 @@
+#main {
+  justify-content: center;
+  margin: 30px 20%;
+}
+
+.content {
+  padding: 20px;
+  width: 100%;
+  background-color: #333333;
+  color: #eee;
+}
+
+.order-summary {
+  display: flex;
+}
+
+.summary {
+  width: 50%;
+}
+
+.cart-item, .address-summary, .card-summary {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #eee;
+  align-items: center;
+}
+
+.item-image {
+  width: 10%;
+}
+
+.item-name {
+  vertical-align: middle;
+  text-align: center;
+  margin: 10px;
+}
+
+.address-summary, .card-summary {
+  display: block;
+}
+
+.checkout-button {
+  width: 100%;
+}
+
+.checkout-button:hover {
+  background-color: #f60;
+  border-color: #f60;
+}
+
+.submit-message {
+  text-align: center;
+}
+
+.homepage-button {
+  width: 50%;
+  margin: 5px;
+}
