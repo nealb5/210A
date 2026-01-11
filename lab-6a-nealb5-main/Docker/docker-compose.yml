@@ -1,0 +1,56 @@
+version: "3.9"
+services:
+  app:
+    image: jaromtia/nodejs-backend-app:latest
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+    depends_on:
+      - db
+
+  vue-app: 
+    image: jaromtia/vue-app:latest 
+    ports:
+      - "8080:80" 
+    depends_on:
+      - app 
+
+  db:
+    container_name: lab-6-mariadb
+    image: jaromtia/mariadb:latest
+    restart: unless-stopped
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "no"
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_USER: developer
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: lab_6
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - 3306:3306
+
+  php:
+    image: jaromtia/nodejs-backend-php:latest
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - .:/var/www/html
+
+  phpmyadmin:
+    container_name: lab-6-phpmyadmin
+    image: jaromtia/phpmyadmin:latest
+    depends_on:
+      - db
+    restart: unless-stopped
+    ports:
+      - 8081:80
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: example
+
+volumes:
+  db-data:
