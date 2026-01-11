@@ -1,0 +1,22 @@
+{
+  "name": "lab-4a-nealb5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BYU-ITC-210/lab-4a-nealb5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BYU-ITC-210/lab-4a-nealb5/issues"
+  },
+  "homepage": "https://github.com/BYU-ITC-210/lab-4a-nealb5#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
