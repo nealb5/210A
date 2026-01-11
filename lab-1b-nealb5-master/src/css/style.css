@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+:root {
+	--primary: #01b954;
+	--accent: #07637a;
+	--delete: #AFA98D;
+	--primary-text: #182825;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+div {
+	width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-family: 'RubikBurned', sans-serif;
+    font-weight: bolder;
+}
+
+nav {
+    color: #ffffff;
+    background-color: #4b4b4b;
+    padding: 0.75rem;
+}
+
+nav a {
+    color: rgb(0, 195, 255);
+    text-decoration: none;
+}
+
+.tasklist {
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: var(--delete);
+}
+
+.task-done {
+	display: inline-block;
+	box-sizing: border-box;
+	color:#00a846
+}
+
+.selector {
+  border-radius: 10px; 
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.task-description {
+    width: 100%;
+    box-sizing: border-box;
+    display: block; 
+}
+
+
+.task-date {
+    display: inline-block;
+    margin-left: auto; 
+}
+
+.task-delete {
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: var(--accent);
+	margin-left: auto;
+}
+
+.date {
+	margin-left: auto;
+}
+
+.material-icon {
+	border: none;
+	background: none;
+	font-family: 'Material Icons';
+	font-size: inherit;
+	cursor: pointer;
+	background-color: #ff4141;
+	margin-left: 0;
+;
+}
+
+.checkbox:checked + label {
+    text-decoration: line-through;
+}
+
+.a {
+	text-align: right;
+}
+
+.container {
+	max-width: 55rem;
+	margin: 0.5em auto;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 0.75rem;
+	background-color: #a7e2f1;
+	width: 100%;
+	box-sizing: border-box;
+  }
+
+input.checkbox-icon {
+	font-family: 'Material Icons';
+    font-size: inherit; 
+	appearance: none; 
+	cursor: pointer;
+}
+
+input.checkbox-icon:before {
+	content: 'check_box_outline_blank';
+}
+
+input.checkbox-icon:checked:before {
+	content: 'check_box';
+}
+
+@font-face {
+    font-family: 'RubikBurned';
+    src: url('RubikBurned-Regular.ttf') format('truetype');
+}
+
+input.toggle-switch {
+	vertical-align: middle;
+    font-size: 1em;
+	appearance: none;
+	position: relative;
+	cursor: pointer;
+	margin: 0em 0.2em;
+    width: 1.4em;
+    height: 0.8em;
+}
+
+input.toggle-switch:after {
+    vertical-align: middle;
+	content: '';
+	display: inline-block;
+    position: absolute;
+	width: 1.4em;
+	height: 0.6em;
+	background-color: rgb(128,128,128);
+	border-radius: 0.3em;
+}
+
+
+input.toggle-switch:before {
+    vertical-align: middle;
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 0.7em;
+	height: 0.7em;
+    z-index: 1;
+	left: 0;
+	top: -0.1em;
+	border: 1px solid rgb(128,128,128);
+	border-radius: 0.6em;
+	background-color: white;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+	transition-duration: 0.3s;
+}
+
+input.toggle-switch:checked:before {
+	left: 0.7em;
+	box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+input.toggle-switch:checked:after {
+	background-color: #16a085;
+}
