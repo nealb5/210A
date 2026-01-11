@@ -1,0 +1,76 @@
+<?php
+error_reporting(-1);
+session_start();
+
+echo "<p>You can use <code>echo</code> to print to the DOM</p>";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Task List Application</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="js/script.js"></script>
+
+</head>
+
+<body onload="loadTasks()">
+    <div class="container">
+    <nav>
+        <a href="https://www.teamwork.com/blog/how-to-prioritize-tasks/">Don't know how to prioritize? Click here</a>
+    </nav>
+    <h1>
+        My Prioritization
+    </h1>
+    <h2>
+        To do:
+    </h2>
+    <input type="checkbox" class="toggle-switch" id="cb-sort1">
+    <label for="cb-sort1">Sort by Date</label>
+
+    <input type="checkbox" class="toggle-switch" id="cb-sort2">
+    <label for="cb-sort2">Filter completed tasks</label>
+
+    <div class="tasks-container">
+      <ul class="task-list">
+          <li class="task">
+              <input type="checkbox" class="checkbox task-done checkbox-icon" name="cb-task1">
+              <label for="cb-task1">Grocery Shopping</label>
+              <span class="date">09-25-2024</span>
+              <button class="task-delete material-icon"><img src="Delete.png" alt="Delete"></button>
+          </li>
+          <li class="task">
+              <input type="checkbox" class="checkbox task-done checkbox-icon" name="cb-task2">
+              <label for="cb-task2">Finish 210 homework</label>
+              <span class="date">09-26-2024</span>
+              <button class="task-delete material-icon"><img src="Delete.png" alt="Delete"></button>
+          </li>
+          <li class="task">
+              <input type="checkbox" class="checkbox task-done checkbox-icon" name="cb-task3">
+              <label for="cb-task3">Clean bathroom</label>
+              <span class="date">09-27-2024</span>
+              <button class="task-delete material-icon"><img src="Delete.png" alt="Delete"></button>
+          </li>
+      </ul>
+    </div>
+    <form onsubmit="on_submit(event); createTask(); return false;">
+        <div>
+            <label for="Description" class="task-description">Task Description:</label>
+            <input class="task-description" type="text" id="Description" name="description" required>
+        </div>
+        <div>
+            <label for="date" class="task-date">Task Date:</label><br>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div>
+            <button type="submit" class="selector">Create Task</button>
+        </div>
+    </form>
+    </div>
+</body>
+
+</html>
